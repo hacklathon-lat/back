@@ -14,6 +14,7 @@ def parse_cors(v: Any) -> list[str] | str:
 
 class Settings(BaseSettings):
     API: str = "/api"
+    ENVIRONMENT: str = "development"
 
     # JWT Settings
     SECRET_TOKEN: str = "your_secret_token_here"
